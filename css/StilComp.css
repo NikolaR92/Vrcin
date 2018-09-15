@@ -1,0 +1,305 @@
+/*CSS Document*/
+
+/* ubacen novi font slova */
+@font-face{
+    font-family: novo;
+    src:url("../slike/MR.ttf");
+}
+
+
+body{
+    width:100%;
+    height:100%;
+    background-image:url("../slike/4444.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-width:1000px;
+    margin:0px;
+}
+
+#omotac{
+    width: 1000px;
+    height: 1500px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:0px;
+	background:rgba(0, 0, 0, 0.0);	
+}
+
+#naslovna{
+    width:1000px;
+    height:350px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:0px;
+    margin-bottom:0px;
+    text-align:center;       
+}
+
+#naslovna img{
+    margin-top:35px;
+    border:2px solid;
+}
+
+/* Navigacija */
+
+#meni{
+    width:976px;
+    height:50px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    background-image:url("../slike/navpozadina.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-left:20px;
+    border:2px solid;
+    position:absolute;
+    z-index: +1;		
+}
+	
+#navigacija{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    font-family:novo;
+    color:white;
+}
+
+#navigacija li{
+    display:inline-block;
+    position: relative;
+    height:51px;
+}
+
+#navigacija a{
+    display:block;
+    float:left;
+    margin-right:10px;
+    margin-top:20px;
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+/* Pod meni */
+
+#navigacija ul{
+    display:none;
+    list-style:none;
+    position:absolute;
+    left:-57px;
+    color:white;
+    margin-top:50px;	
+}
+
+#navigacija li:hover ul {
+    display: block;
+}
+
+#navigacija ul li{
+    display:block;
+    margin: 0px;
+    padding: 0px;
+}
+	
+#navigacija li ul li a{
+    display:block;
+    width:100px;
+    margin-top:0px;
+    margin-bottom:0px;
+    height:51px;
+    text-align:center;
+    color:white;
+    background-image:url("../slike/navpozadina.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#navigacija li:hover ul li a{
+    display:block;
+    width:100px;
+    height:51px;
+    margin-top:0px;
+    margin-bottom:0px;
+    text-align:center;
+    color:white;
+    background-image:url("../slike/navpozadina.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* Glavni deo stranice */
+
+#sredina{
+    height:1050px;
+    margin-top:52px;
+	margin-bottom:0px;
+    background:rgba(0, 0, 0, 0.0);
+    border-bottom:2px solid;
+    border-left:2px solid;
+    border-right:2px solid;
+    padding:0px;
+    background-image:url("../slike/tekstpozr.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;		
+}
+ 
+/* Sadrzaj stranice */
+
+#levi_sredina{
+    width:546px;
+    height:94%;
+    float:left;
+    margin-top:0px;
+    margin-left:45px;
+    margin-right:6px;
+    padding:10px;
+    background-color:#E5E5E5;
+    border: 2px solid;
+    background-image:url("../slike/page6.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;			
+}
+
+/*Desni deo, korisni linkovi, obavestenja, galerija*/
+
+#desni_sredina{
+    width:375px;
+    float:left;
+    margin-top:0px;
+    margin-left:0px;
+    margin-right:0px;
+    background-color:orange;
+    background:rgba(0, 0, 0, 0.0);
+}
+
+#galerija{
+    width:300px;
+    height:200px;
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:white;
+    border: 2px solid;		
+}
+
+#obavestenja{
+    width:200px;
+    height:400px;
+    margin-top:30px;
+    margin-left:auto;
+    margin-right:auto;
+    border: 2px solid;
+    background-image:url("../slike/page6.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;	
+}
+
+div.naslov{
+    width:100%;
+    height:30px;
+    margin:0px;
+    background-image:url("../slike/navpozadina.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color:white;
+    border-bottom:2px solid black;
+    text-align:center;
+    padding-top:10px;
+}
+
+div.obavestenje{
+    width:190px;
+    height:30px;
+    margin:0px;
+    padding:5px;
+    border-bottom:2px dashed;
+}
+
+/* footer stranice */
+
+#copyright{
+    color:white;
+	text-align:center;
+    background-color:black;
+	margin:0px;
+	padding:0px;
+}
+          
+/*biblioteka stil*/
+
+div.oblasti{
+    text-align:center;
+    width:100%;
+    height:40px;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:20px;
+}
+
+/*clanci*/
+	   
+div.autor{
+    text-align:left;
+    height:30px;
+    font-weight:bold;
+    margin-top:0px;
+    padding-left:10px;
+    padding-top:10px;
+    border-left:2px solid black;
+    border-right:2px solid black;
+}
+
+div.tekst{
+    text-align:left;
+    padding:10px;
+    border-left:2px solid black;
+    border-right:2px solid black;
+}
+
+div.datum{
+    text-align:center;
+    margin-top:0px;
+    padding-top:10px;
+    height:30px;
+    border-left:2px solid black;
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+}
+
+/*knjige, članovi, iznajmljivanje*/
+table{
+    border:2px solid;
+    border-spacing:0px;
+}
+
+td{
+    border:1px solid black;
+    width:200px;
+}
+
+th{
+    border:1px solid black;
+    width:200px;
+	background-image:url("../slike/navpozadina.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+	color:white;	   
+}
+
+/*stil rezultata nad bazom*/
+div.oznaka{
+    margin-left:auto;    
+    margin-right:auto;
+	height:30px;
+	width:300px;
+	background-color:#E2DA6A;
+	font-weight:bold;
+	padding:10px;
+	padding-top:20px;
+	text-align:center;
+}	 

@@ -1,0 +1,41 @@
+Poštovana,
+
+Seminarski rad predstavlja malu prezentaciju mesta u kome živim. Sajt se sastoji iz tri dela Početna stranica, Biblioteka i Kontakt. Da bi kod bio pregledniji funkcije koje se koriste u datoteci biblioteka.php su sve smeštene u datoteci funkcija.php gde su posle preko includa uključene u biblioteka.php.
+Da bi mogli da se lakse snađete u narednom delu navodi tačke koje se boduju i gde su te tačke urađene:
+
+HTML deo:
+     Sajt je rađen po HTML5 smernicama.
+     Rad sa tesktom i video zapisom pokriven je u datoteci index.php.
+     Rad sa listama,linkovima i slikama pokriven je u datoteci naslovna.php i galerija.php.
+     Rad sa tabelama je pokriven u datotekama biblioteka.php i funkcije.php pošto je rad sa njima realizovan preko php.
+
+CSS deo:
+    Ceo css deo je izdvojen u folderu  ccs u datoteci StilComp.css.
+    Rad je testiran na Google Chrome Version 37.0.2062.94 (64-bit)  kao i Mozzila Firefox 31.0
+
+JavaScript i jQuery deo:
+    Svi formulari koji se traze su prisutni u datoteci kontakt.php.
+    JavaScript kod za rad sa tim formularima i testiranje se nalazi u folderu  javascript u datoteci ostavljanjeKomentara.js
+    Takodje testiranje formulara koji se nalaze u biblioteka.php je izvrseno i kod se nalazi u proveraObrada.js
+    Za dodatan JavaScript segment uradio sam slideshow koji je prisutan na svakoj stranici, kod za slideshow se nalazi u folderu javascript slideshow.js, a kod za slike je prisutan u datoteci galerija.php
+    Za jQuery segment uradio sam animaciju promene naslovne slike kod za to se nalazi u folderu javascript u datoteci  promenaNaslovne.js
+
+PHP/MySQL deo:
+    Napravljene su 4 tablice, detaljan opis svak tablice se nalazi u datoteci opis.txt.
+    Detalji povezivanja sa bazom se nalaze u datoteci db.inc.
+    Od operacija nad bazom podrzane su: -pretraga: funkcija za pretragu se zove pretragaPodataka(); koja se nalazi u datoteci funkcije.php;
+                                        -unos: funkcije za unos su unosClana(); i unosIznajmi(); koje se isto nalaza u funkcija.php;
+                                        -izmena: funkcija za izmenu je izmena(); koja se nalazi u funkcije.php;
+                                        -brisanje: funkcija za brisanje je obrisati(); koja se nalazi u funkcije.php;
+    --implementacija svih ovih funkcija je izvresena u datoteci bibliotek.php.
+    Za uspesno koriscenje ovih funkcija morate da se ulogujete kao član biblioteke ili kao administrator
+       -podaci za logovanje su: -da bi se ulogovali kao administrator morate da unesete korisničko ime: Administrator Šifra: 0205.
+                                -da bi se ulogovali kao član morate da unesete korisničko ime: nr1501 Šifra: Nikola92, ako hoćete da se ulogujete kao neki drugi član u tablici clanovi pronadjite broj_karte to je korisnicko ime, a sifra je u odgovarajucem polju. 
+    Rad sa sesijama i kolacicima je implementiran u biblioteci.php.
+    Rad sa AJAX je demostriran u index.php preko funkcije ucitaj();. 
+    
+Nadam se da sam uspešno ispunio sve uslove,
+
+S' postovanjem,
+Nikola Ristić 310/2011
+

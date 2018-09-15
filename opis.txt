@@ -1,0 +1,32 @@
+Opis tablica:
+
+clanovi-tablica sadrži spisak članova biblioteke
+
+atributi tablice su: broj_karte - jedinstvena reč koji svaki član biblioteke poseduje, primarni ključ tablice dužina reči 6 karaktera;
+                     ime - sadrži ime člana dužina 20 karaktera;
+                     prezime - sadrži prezime člana dužina 20 karaktera;
+                     datum_rodjenja - datum rodjenja člana;
+                     sifra - šifra korisnika za logovanje na sajt,najveća dužina 16 karaktera;                    
+
+knjige-tablica sadrži spisak knjiga koje su prisutne u biblioteci
+
+atributi tablice: id_knjige - jedinstveni id knjige, primarni ključ tablice, duzina do 10 cifara;
+                  naziv - naslov knjige; 
+                  autor - pisac knjige;
+                  izdavac - firma koja je izdala knjigu;
+                  izdanje - datum izdavanja knjige;
+
+novinski_clanci-tablica sadrži tekstove novinskih članaka
+
+atributi tablice: naslov - naslov novinskog članka;
+                  autor - pisac ili novine koje su ga izdale;
+                  tekst - sadrži tekst novinskog članka;
+                  datum - datum objavljivanja novinskog članka;
+
+iznajmljivanje-tablica sadrži evidenciju knjiga koje su iznajmljene, datum uzimanja kao i datum vraćanje knjige i  član koji je knjigu iznajmio
+
+atributi tablice: id_iznajmljivanja - jedinstveni broj koji indetifikuje transakciju;
+                  broj_karte - strani ključ preuzet iz tablice clanovi, predstavlja člana biblioteke koji uzima knjigu;
+                  id_knjige - strani ključ preuzet is tablice knjige, predstavlja knjigu koja se iznajmljuje;
+                  datum_iznajmljivanja - datum kada je knjiga uzeta;
+                  datum_vracanja - datum kada je knjiga vraćena;
